@@ -52,7 +52,10 @@ if __name__ == '__main__':
 
     while True:
         time.sleep(random.randint(0, 30) / 10)
-        df = vivino.get_wine_data(page)
+        try:
+            df = vivino.get_wine_data(page)
+        except TypeError:
+            df = pd.DataFrame()    
 
         if main_df.empty:
             main_df = df

@@ -4,4 +4,5 @@ Goal is to read Vivino ratings, and then scrap supermarkets wines in discount to
 # TODO
  - add price filter
  - add vivino ETL
+ - Logging
  - scrapp major supermarkets
